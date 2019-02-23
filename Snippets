@@ -36,6 +36,7 @@ Only the original repo where you made that commit will still have the node_modul
 
 How to find out what your remote repository is?
 ===============================================
+https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr/4089452#4089452
 
 If you want only the remote URL, or referential integrity has been broken:
 
@@ -52,3 +53,9 @@ C:\Users\jaredpar\VsVim> git remote show origin
   HEAD branch: master
   Remote branches:
 If you want to use the value in the script, you would use the first command listed in this answer.
+
+For me, this is the easier way (less typing):
+
+$ git remote -v
+origin    https://github.com/torvalds/linux.git (fetch)
+origin    https://github.com/torvalds/linux.git (push)
